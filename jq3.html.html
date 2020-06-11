@@ -4,10 +4,14 @@
 <HEAD>
 <style type="text/css">
 *{margin:0;padding:0;}
-ul{list-style:none;position:relative;top:0px;}
+ul{list-style:none;position:relative;top:-170px;}
+div{width:151px;margin:20px 0 0 50px;height:510px;overflow:hidden;position:relative;}
+img{width:151px;border:0;}
+a{font-size:12px;text-align:center;line-height:20px;}
 </style>
 </HEAD>
 <BODY>
+<button class="top">猛击向上</button>
 <div>
 <ul>
 <li><a href="javascript:;"><img src="http://pic.veryhuo.com/uploads/common/images/wall_s1.jpg" />Webcam Hosting</a></li>
@@ -17,20 +21,25 @@ ul{list-style:none;position:relative;top:0px;}
 <li><a href="javascript:;"><img src="http://pic.veryhuo.com/uploads/common/images/wall_s5.jpg" />SecurityPro Shop</a></li>
 </ul>
 </div>
-
-</body>
-
-<button class="bottom">单击变换</botton>
+<button class="bottom">猛击向下</botton>
 <script type="text/javascript" src="http://pic.veryhuo.com/uploads/common/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript">
 $(function(){
+var $top=$("button.top");
 var $bottom=$("button.bottom");
+$top.click(function(){
+$("ul").animate({marginTop:"-170px"},1000,function(){
+$("ul li:eq(0)").appendTo($("ul"));
+$("ul").css("marginTop","0px");
+});
+});
 $bottom.click(function(){
 $("ul").animate({marginTop:"170px"},1000,function(){
 $("ul li:last").insertBefore($("ul li:first"));
+$("ul").css("marginTop","0px");
 });
 });
 })
 </script>
 </BODY>
-<html>
+<htML>  <br /><center>如不能显示效果，请按Ctrl+F5刷新本页，更多网页代码：<a href='http://www.veryhuo.com/' target='_blank'>http://www.veryhuo.com/</a></center>
