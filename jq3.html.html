@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<HTML>
+<title>jquery上下图片移动</title>
+<HEAD>
+<style type="text/css">
+*{margin:0;padding:0;}
+ul{list-style:none;position:relative;top:0px;}
+</style>
+</HEAD>
+<BODY>
+<ul>
+<br>
+<li><div style="width:80px;height:80px;background-color:red;"></div></li>
+<br>
+<li><<div style="width:80px;height:80px;background-color:green;"></div></li>
+<br>
+<li><<div style="width:80px;height:80px;background-color:green;"></div></li>
+<br>
+<li><<div style="width:80px;height:80px;background-color:green;"></div></li>
+<br>
+
+</ul>
+</body>
+
+<button class="bottom">单击变换</botton>
+<script type="text/javascript" src="http://pic.veryhuo.com/uploads/common/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+var $bottom=$("button.bottom");
+$bottom.click(function(){
+$("ul").animate({marginTop:"170px"},1000,function(){
+$("ul li:last").insertBefore($("ul li:first"));
+});
+});
+})
+</script>
+</BODY>
+<html>
