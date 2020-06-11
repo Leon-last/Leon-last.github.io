@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+p.tip{text-align: center; color:#00C;font-size: 25px;}
+</style>
+<script src="../新建文件夹/jquery.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+  });
+});
+</script>
+ 
+<style type="text/css"> 
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#8DB6CD;
+border:solid 1px #000000;
+}
+div.panel
+{
+
+}
+</style>
+</head>
+ 
+<body>
+ <p class="tip">欢迎来到NBA殿堂</p>
+
+<p class="flip">请选择你喜欢的球队</p>
+ </script>
+
+
+<div class="panel">
+<div id="editlinkdiv">
+    <select id="selectlink" name="selectlink">
+   <option>湖人</option>      
+ <option>PG鲍尔</option>
+ <option>SG鲁尔邓</option>
+ <option>霍华德</option> 
+ <option>安东尼 戴维斯</option> 
+    </select>
+</div>
+<div id="editlinkdiv">
+    <select id="selectlink" name="selectlink1">
+   <option>勇士</option>      
+ <option>库里</option>
+ <option>汤普森</option>
+ <option>威金斯</option> 
+ <option>卢尼</option> 
+    </select>
+</div>
+</div>
+<p class="tip"><input type="button" id="editlink" value="确认" />
+</body>
+</html>
