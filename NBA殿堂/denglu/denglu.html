@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0px auto;
+			}
+			#daohang{
+	 position:absolute;
+	 left:360px;
+	 top:40px;
+	 z-index:100;
+	 }
+	  a {
+         
+          position: relative;
+          font-size:24px;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #252525;
+        }         
+        a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height:2px;
+          bottom:-5px;
+          left: 0;
+          background-color: #252525;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }         
+        a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1);
+        }      
+
+table,th,td
+{
+border:0;
+}
+table{
+	width:150px;}
+table{
+	height:24px;}
+			body{
+				background-image: url(11.jpg);
+				background-size: 100% auto;
+			}
+			#box{
+				border:15px rgba(255,255,255,0.25) solid;
+				width:840px;
+				height:500px;
+				background-color:#ffffff00;
+				margin-top:200px;
+				border-radius: 10px;
+			}
+			#box>div{
+				width:420px;
+				height:500px;
+				float:left;
+			}
+			#box>div:nth-child(1){
+				background-image: url(8.jpg);
+				background-size: 420px 500px;
+			}
+			#box>div:nth-child(2){
+				background-color:rgba(255,255,255,0.7);
+			}
+			#box>div:nth-child(2)>div:nth-child(1){
+				margin-top: 80px;
+				margin-left: 40px;
+			}
+			#box>div:nth-child(2)>div:nth-child(2){
+				margin-top: 30px;
+				width:400px;
+				height:40px;
+			}
+			#box>div:nth-child(2)>div:nth-child(2)>input{
+				background-color: #FFFFFF00;
+				border:0px;
+				border-bottom:3px #000000 solid;
+				width:250px;
+				height:40px;
+				text-align: initial;
+				font-size: 18px;
+				padding: 0px 40px;
+				float: left;
+				outline: none;
+			}
+			#box>div:nth-child(2)>div:nth-child(2)>div{
+				background-image: url(1.png);
+				background-size: 20px 20px;
+				width:20px;
+				height:20px;
+				float:left;
+				margin-top: 10px;
+				margin-left: 40px;
+				margin-right: -30px;
+			}
+			#box>div:nth-child(2)>div:nth-child(3){
+				margin-top: 30px;
+				width:400px;
+				height:40px;
+			}
+			#box>div:nth-child(2)>div:nth-child(3)>input{
+				background-color: #FFFFFF00;
+				border:0px;
+				border-bottom:3px #000000 solid;
+				width:250px;
+				height:40px;
+				text-align: initial;
+				font-size: 18px;
+				padding: 0px 40px;
+				float: left;
+				outline: none;
+			}
+			#box>div:nth-child(2)>div:nth-child(3)>div{
+				background-image: url(2.png);
+				background-size: 20px 20px;
+				width:20px;
+				height:20px;
+				float:left;
+				margin-top: 10px;
+				margin-left: 40px;
+				margin-right: -30px;
+			}
+			#box>div:nth-child(2)>div:nth-child(4){
+				width:330px;
+				height:45px;
+				border-radius:30px;
+				background-color: red;
+				text-align: center;
+				font-size: 20px;
+				line-height: 40px;
+				color:#ffffff;
+				margin-top: 30px;
+				margin-left: 40px;
+			}
+			#box>div:nth-child(2)>div:nth-child(5){
+				margin-top: 30px;
+				margin-left: 40px;
+			}
+		</style>
+	</head>
+	<body>
+    <div id="daohang">
+
+<table>
+<tr>
+<th><a href="../shouye/NBA.html">首页</a>	</th>
+<th><a href="../faxian/faxian.html">发现</a>	</th>
+</tr>
+</table>
+
+ </div>
+		<div id="box">
+       
+
+
+			<div></div>
+
+
+			<div>
+				<div><h2>Sign in Here</h2></div>
+				<div>
+					<div></div>
+					<input type="text" id="1" placeholder="Username" />
+				</div>
+				<div>
+					<div></div>
+					<input type="password" id="2" placeholder="Password" />
+				</div>
+				<div>Sign in</div>
+				<div><h3>Forget Password</h3></div>
+			</div>
+		</div>
+	</body>
+</html>

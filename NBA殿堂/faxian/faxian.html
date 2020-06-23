@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{
+				padding: 0;
+				margin: 0;
+			}
+
+ a {
+         
+          position: relative;
+          font-size:24px;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #969696;
+        }         
+        a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height:2px;
+          bottom:-5px;
+          left: 0;
+          background-color: #019875;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }         
+        a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1);
+        }      
+
+table,th,td
+{
+border:0;
+}
+table{
+	width:150px;}
+table{
+	height:24px;}
+#web_bg{
+
+  position:fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width:100%;
+
+  height:100%;
+
+  min-width: 1000px;
+
+  z-index:-10;
+
+  zoom: 1;
+
+  background-color: #fff;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  -webkit-background-size: cover;
+
+  -o-background-size: cover;
+
+  background-position: center 0;
+
+}
+#bananer{
+	width:62.5%;	
+	
+	  margin:0 auto;
+	}
+	#bottom-bananer{
+	width:62.5%;	
+	
+	  margin:0 auto;
+	}
+#daohang{
+		width:62.5%;
+         margin:0 auto;
+	   
+	 }
+#pictures-back{
+	width: 62.5%;
+	background-color:#505050;
+	overflow:hidden;
+	margin:0 auto;
+
+	}
+	
+#pictures-back li{
+            /*去掉 li 前边的样式*/
+            list-style-type:none;
+            width: 200px;
+            height: 270px;          
+            
+            /*为了让 li 放一排，使用左左浮动*/
+           float:left;
+		    
+			 margin:10px 0 0 37px;       
+                
+        }
+
+ #picture{
+            width: 180px;
+			height:240px;
+			
+            margin: 0;
+        }
+#pictures-back span{
+           text-align:center;
+            display: block;         
+        }
+       #pictures-back a:link{
+            color:black;
+            text-decoration:none;
+        }
+        #pictures-back a:hover{
+            color:red;
+            text-decoration:underline;
+        }
+#pictures-back .teamname{
+	width:62.5%;
+	margin:0 auto;
+	text-align: center;
+	}
+	 .teamname img{	 
+		width:100px;
+		height:100px;
+		}
+		.teamname p{
+			color:#181818;
+			text-align:center;
+			font-size:30px;
+			font-weight:bold;
+			
+				}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!--背景图片-->
+
+    <div id="web_bg" style="background-image: url(bg.png);"></div>
+
+    <!--其他代码 ... -->
+<div id="back" style="width:1920px;display:block;">
+
+<div id="daohang">
+<table>
+<tr>
+<th><a href="../shouye/NBA.html">首页</a>	</th>
+<th><a href="../faxian/faxian.html">发现</a>	</th>
+</tr>
+</table>
+</div>
+
+<div id="bananer">
+<img  src="faxian1.png"width:62.5% >
+ </div>
+
+<div id="pictures-back">
+
+<div class="teamname">
+  <img src="yongshi.png"  />
+<p>勇士</p>
+</div>
+
+<ul >
+     <li><img id="picture"src="kuli.jpg"><span><a href="../kuli/kuli.html">库里</a></span></li>
+     <li><img id="picture"src="weijinsi.jpg"><span><a href="../weijinsi/weijinsi.html">维金斯</a></span></li>
+      <li><img id="picture"src="luni.jpg"><span><a href="../weijinsi/weijinsi.html">卢尼</a></span></li>
+       <li><img id="picture"src="gelin.jpg"><span><a href="../gelin/gelin.html">格林</a></span></li>
+        <li><img id="picture"src="tangpusen.jpg"><span><a href="../tangpusen/tangpusen.html">汤普森</a></span></li>
+ </ul>
+ <div class="teamname">
+ 
+   <img src="huren.png" />
+  <p>湖人</p>
+  
+</div>
+ <ul >
+  
+     <li><img id="picture"src="zhanmusi-huren.jpg"><span><a href="../zhanmusi/zhanmusi.html">勒布朗 詹姆斯</a></span></li>
+     <li><img id="picture"src="andongni-huren.jpg"><span><a href="../andongni/andongni.html">安东尼</a></span></li>
+      <li><img id="picture"src="huohuade-huren.jpg"><span><a href="../huohuade/huohuade.html">霍华德</a></span></li>
+       <li><img id="picture"src="kuzima-huren.jpg"><span><a href="../kuzima/kuzima.html">库兹马</a></span></li>
+        <li><img id="picture"src="longduo-huren.jpg"><span><a href="../longduo/longduo.html">隆多</a></span></li>
+ </ul>
+ <div class="teamname">
+  <img src="kuaichuan.png" />
+  <p>快船</p>
+</div>
+ <ul >
+ 
+     <li><img id="picture"src="baoluo-kuaichuan.jpg"><span><a href="../baoluo/baoluo.html">保罗</a></span></li>
+     <li><img id="picture"src="lunnade-kuaichuan.jpg"><span><a href="../lunnade/lunnade.html">伦纳德</a></span></li>
+      <li><img id="picture"src="luwei-kuaichuan.jpg"><span><a href="../luwei/luwei.html">路威</a></span></li>
+       <li><img id="picture"src="haleier-kuaichuan.jpg"><span><a href="../haleier/haleier.html">哈雷尔</a></span></li>
+        <li><img id="picture"src="zubaci-kuaichuan.jpg"><span><a href="../zubaci/zubaci.html">祖巴茨</a></span></li>
+ </ul>
+ 
+</div>
+<div id="bottom-bananer">
+<img  src="faxian2.png"width:62.5%; >
+ </div>
+
+</div>
+</div>
+
+
+</body>
+</html>
